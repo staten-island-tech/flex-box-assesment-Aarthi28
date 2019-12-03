@@ -1,9 +1,9 @@
 @import "./_header.scss";
 @import "./_about.scss";
 
-$colors:(
-    primary: #345123
-);
+$primary:(primary: #9C27B0);
+$lightprimary:(lightprimary: #E1BEE7);
+$darkprimary: (darkprimary: #7B1FA2);
 $padding:1.3rem;
 
 @function color($color-name) {
@@ -15,7 +15,7 @@ body{
 }
 
 .flex-parent{
-    background-color: purple;
+    background-color: rgba(color(darkprimary), 0.4);
     height: 60vh;
     display: flex;
     flex-direction: column-reverse;
@@ -23,7 +23,7 @@ body{
     align-content: center;
 }
 .flex-child{
-    background-color: blue;
+    background-color: rgba(color(lightprimary), 0.4) ;
     margin: 10px;
     height: 20vh;
     color: white;
@@ -35,6 +35,8 @@ body{
 #flex-grow-2{
     flex-grow: 2;
 }
+/*
 .flex-sm{
     background-color: purple;
 }
+*/
