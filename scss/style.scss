@@ -1,14 +1,7 @@
-@import "./_intro.scss";
+@import "./_variables.scss";
+@import "./_images.scss";
 @import "./_about.scss";
 
-$primary:(primary: #9C27B0);
-$lightprimary:(lightprimary: #E1BEE7);
-$darkprimary: (darkprimary: #7B1FA2);
-$padding:1.3rem;
-
-@function color($primary, $darkprimary, $lightprimary) {
-    @return map-get($primary, $darkprimary, $lightprimary);
-}
 /*
 body{
     background-color: rgba(color($primary), 0.4);

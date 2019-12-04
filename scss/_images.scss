@@ -1,22 +1,16 @@
-$primary:(primary: #9C27B0);
-$lightprimary:(lightprimary: #E1BEE7);
-$darkprimary: (darkprimary: #7B1FA2);
-$padding:1.3rem;
+@import "./_variables.scss";
 
-@function color($primary, $darkprimary, $lightprimary) {
-    @return map-get($primary, $darkprimary, $lightprimary);
-}
-/*
+
 .header{
-    background-color: rgba(color($darkprimary), 0.4);
+    background-color: rgba(color(darkprimary), 0.4);
 }
-*/
+
 .flex-parent{
     /*background-color: rgba(color(darkprimary), 0.4);*/
     height: 60vh;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-content: center;
 }
 
@@ -25,8 +19,9 @@ $padding:1.3rem;
     margin: 10px;
     height: 20vh;
 };
+
 #img1{
-    height: 10vh;
+    height: 40vh;
 }
 
 .flex-child2{
@@ -35,7 +30,7 @@ $padding:1.3rem;
     height: 20vh;
 };
 #img2{
-    height: 10vh;
+    height: 40vh;
 }
 
 .flex-child3{
@@ -44,7 +39,7 @@ $padding:1.3rem;
     height: 20vh;
 };
 #img3{
-    height: 10vh;
+    height: 40vh;
 }
 
 .flex-child4{
@@ -53,7 +48,7 @@ $padding:1.3rem;
     height: 20vh;
 };
 #img4{
-    height: 10vh;
+    height: 40vh;
 }
 
 /*

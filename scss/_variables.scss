@@ -1,0 +1,18 @@
+/* $primary:(primary: #9C27B0);
+$lightprimary:(lightprimary: #E1BEE7);
+$darkprimary: (darkprimary: #7B1FA2); */
+$padding:1.3rem;
+
+$colors:(
+    primary: #9C27B0,
+    lightprimary: #E1BEE7,
+    darkprimary: #7B1FA2
+);
+
+
+@function color($color-name) {
+    @return map-get($colors, $color-name);
+}
+
+/* @function color($primary, $darkprimary, $lightprimary) {
+    @return map-get($primary, $darkprimary, $lightprimary); */
