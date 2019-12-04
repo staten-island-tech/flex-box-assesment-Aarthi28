@@ -1,0 +1,71 @@
+$primary:(primary: #9C27B0);
+$lightprimary:(lightprimary: #E1BEE7);
+$darkprimary: (darkprimary: #7B1FA2);
+$padding:1.3rem;
+
+@function color($primary, $darkprimary, $lightprimary) {
+    @return map-get($primary, $darkprimary, $lightprimary);
+}
+/*
+.header{
+    background-color: rgba(color($darkprimary), 0.4);
+}
+*/
+.flex-parent{
+    /*background-color: rgba(color(darkprimary), 0.4);*/
+    height: 60vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.flex-child1{
+    /*background-color: rgba(color(lightprimary), 0.4) ;*/
+    margin: 10px;
+    height: 20vh;
+};
+#img1{
+    height: 10vh;
+}
+
+.flex-child2{
+    /*background-color: rgba(color(lightprimary), 0.4) ;*/
+    margin: 10px;
+    height: 20vh;
+};
+#img2{
+    height: 10vh;
+}
+
+.flex-child3{
+    /*background-color: rgba(color(lightprimary), 0.4) ;*/
+    margin: 10px;
+    height: 20vh;
+};
+#img3{
+    height: 10vh;
+}
+
+.flex-child4{
+    /*background-color: rgba(color(lightprimary), 0.4) ;*/
+    margin: 10px;
+    height: 20vh;
+};
+#img4{
+    height: 10vh;
+}
+
+/*
+}
+#flex-grow-1{
+    display: flex:
+    justify-content: space-bewteen
+}
+#flex-grow-2{
+    flex-grow: 2;
+}
+.flex-sm{
+    background-color: purple;
+}
+*/

@@ -1,4 +1,4 @@
-@import "./_header.scss";
+@import "./_intro.scss";
 @import "./_about.scss";
 
 $primary:(primary: #9C27B0);
@@ -6,37 +6,11 @@ $lightprimary:(lightprimary: #E1BEE7);
 $darkprimary: (darkprimary: #7B1FA2);
 $padding:1.3rem;
 
-@function color($color-name) {
-    @return map-get($colors, $color-name);
-}
-
-body{
-    background-color: rgba(color(primary), 0.4);
-}
-
-.flex-parent{
-    background-color: rgba(color(darkprimary), 0.4);
-    height: 60vh;
-    display: flex;
-    flex-direction: column-reverse;
-    justify-content: space-evenly;
-    align-content: center;
-}
-.flex-child{
-    background-color: rgba(color(lightprimary), 0.4) ;
-    margin: 10px;
-    height: 20vh;
-    color: white;
-}
-#flex-grow-1{
-    display: flex:
-    justify-content: space-bewteen
-}
-#flex-grow-2{
-    flex-grow: 2;
+@function color($primary, $darkprimary, $lightprimary) {
+    @return map-get($primary, $darkprimary, $lightprimary);
 }
 /*
-.flex-sm{
-    background-color: purple;
+body{
+    background-color: rgba(color($primary), 0.4);
 }
 */
