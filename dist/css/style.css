@@ -1,4 +1,4 @@
-.flex-parent {
+.image-box {
   /*background-color: rgba(color(darkprimary), 0.4);*/
   display: -webkit-box;
   display: -ms-flexbox;
@@ -15,8 +15,8 @@
   height: 25vh;
 }
 
-.about {
-  background-color: purple;
+.recipe {
+  background-color: rgba(156, 39, 176, 0.4);
 }
 
 .flex-child1 {
