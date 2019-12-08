@@ -3,9 +3,8 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -ms-flex-line-pack: center;
       align-content: center;
   margin: 22px;
@@ -16,47 +15,74 @@
 }
 
 .recipe {
-  background-color: rgba(156, 39, 176, 0.4);
+  background-color: rgba(0, 188, 212, 0.4);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 22px;
 }
 
-.flex-child1 {
-  /*background-color: rgba(color(lightprimary), 0.4) ;*/
-  margin: 10px;
-  height: 20vh;
+.recipe-box {
+  margin: 15px;
+  padding: 20px;
 }
 
-.flex-child2 {
-  /*background-color: rgba(color(lightprimary), 0.4) ;*/
-  margin: 10px;
-  height: 20vh;
+#title {
+  text-align: center;
 }
 
-.flex-child3 {
-  /*background-color: rgba(color(lightprimary), 0.4) ;*/
-  margin: 10px;
-  height: 20vh;
+#ingredients {
+  background-color: rgba(178, 235, 242, 0.4);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
-.flex-child4 {
-  /*background-color: rgba(color(lightprimary), 0.4) ;*/
-  margin: 10px;
-  height: 20vh;
+.ingredients-imgs {
+  margin: auto;
+  text-align: center;
 }
 
-/*
+#ingredients-pic {
+  height: 14rem;
 }
-#flex-grow-1{
-    display: flex:
-    justify-content: space-bewteen
+
+#directions {
+  background-color: rgba(178, 235, 242, 0.4);
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
-#flex-grow-2{
-    flex-grow: 2;
+
+.image-gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 15rem;
 }
-.flex-sm{
-    background-color: purple;
+
+#images {
+  height: 15rem;
 }
-*/
+
 body {
-  background-color: rgba(123, 31, 162, 0.4);
+  background-color: rgba(0, 131, 143, 0.4);
 }
 /*# sourceMappingURL=style.css.map */
