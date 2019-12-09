@@ -1,7 +1,7 @@
 .recipe{
     background-color: rgba(color(primary), 0.4);
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-around;
     margin: 22px;
 }
@@ -9,13 +9,16 @@
     margin: 15px;
     padding: 20px;
 }
-#title{
+#title1{
     text-align: center;
+    margin-left: 1rem;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
 }
 #ingredients{
     background-color: rgba(color(lightprimary), 0.4);
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
 .ingredients-imgs{
     margin: auto;
@@ -28,7 +31,14 @@
     background-color: rgba(color(lightprimary),0.4);
     flex-direction: row;
 }
+#title2{
+    margin-bottom: 10px;
+}
+.paragraph{
+    display: flex;
+}
 .image-gallery{
+    margin: 1rem;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
