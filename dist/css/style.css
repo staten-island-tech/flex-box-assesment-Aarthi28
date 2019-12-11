@@ -25,17 +25,17 @@
           flex-direction: row;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  margin: 22px;
+  margin: 1rem;
 }
 
 .recipe-box {
-  margin: 15px;
-  padding: 20px;
+  margin: 1rem;
+  padding: 1.5rem;
 }
 
 #title1 {
   text-align: center;
-  margin-left: 1rem;
+  margin-left: 2.2rem;
   -webkit-writing-mode: vertical-rl;
       -ms-writing-mode: tb-rl;
           writing-mode: vertical-rl;
@@ -64,14 +64,17 @@
 
 #directions {
   background-color: rgba(178, 235, 242, 0.4);
-  -webkit-box-orient: horizontal;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 #title2 {
-  margin-bottom: 10px;
+  margin-bottom: 0.7rem;
 }
 
 .paragraph {
